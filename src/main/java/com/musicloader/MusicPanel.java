@@ -51,7 +51,7 @@ public final class MusicPanel {
 
         // кнопка "Добавить текст" (необязательно)
         add.accept(Button.builder(Component.literal("Добавить текст"),
-                        b -> Minecraft.getInstance().setScreen(new TextInputScreen(screen)))
+                        b -> ScreenUtil.open(new TextInputScreen(screen)))
                 .bounds(6, 56, Math.min(110, leftSpace - 12), 20).build());
 
         // полоса прогресса снизу (клик = перемотка)

@@ -43,6 +43,6 @@ public class TextInputScreen extends Screen {
 
     @Override
     public void onClose() {
-        this.minecraft.setScreen(parent);
+        ScreenUtil.open(parent);
     }
 }
